@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 import { AdminBar } from './_components/AdminBar'
 import { Footer } from './_components/Footer'
@@ -24,8 +25,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           {/* @ts-expect-error */}
           <Header />
           {children}
-          {/* @ts-expect-error */}
-          <Footer />
+
+          {/* <Footer /> */}
         </Providers>
       </body>
     </html>
